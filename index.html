@@ -1,195 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Jesus’ Early Ministry – Interactive Timeline</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
- :root{--accent:#0a2a47;--bg:#f5f7fa}
- body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#212529}
- h1{padding:1.5rem 2rem 0;margin:0;color:var(--accent);font-size:1.6rem}
- .timeline{position:relative;margin:2rem 2rem 4rem 2.5rem;padding-left:1.5rem}
- .timeline::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent)}
- .phase{margin-bottom:2rem}
- .phase h2{margin:0 0 1rem 0;color:#0f3e6b;font-size:1.25rem}
- /* event dot */
- .event{position:relative;margin-bottom:1rem}
- .event::before{content:"";position:absolute;left:-28px;top:10px;width:14px;height:14px;border-radius:50%;
-                background:var(--accent)}
- /* accordion styles */
- details.section{border:1px solid var(--accent);border-radius:4px;background:#fff}
- details.section summary{cursor:pointer;padding:.6rem 1rem;font-weight:600;color:var(--accent);
-                         list-style:none;position:relative}
- details.section summary::marker,details.section summary::-webkit-details-marker{display:none}
- details.section summary::after{content:"▼";position:absolute;right:1rem;transition:.2s}
- details.section[open]>summary::after{transform:rotate(180deg)}
- /* verses */
- details.verse{border-top:1px solid #adb5bd}
- details.verse summary{background:#f0f2f5;font-weight:500;color:#373d3f;padding:.55rem 1rem}
- details.verse summary::after{content:"►";right:1rem}
- details.verse[open]>summary::after{content:"▼"}
- .scripture{padding:.75rem 1rem;line-height:1.6}
- .loading{font-style:italic;color:#6c757d}
- @media(max-width:600px){
-   .timeline{margin-left:1.5rem}
-   .timeline::before{left:-6px}
-   .event::before{left:-20px}
- }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walking with Jesus — Interactive Timeline</title>
+  <style>
+    :root{--accent:#0a2a47;--bg:#f5f9fc}
+    body{margin:0;padding:20px;font-family:Arial,sans-serif;background:var(--bg);color:#333}
+    h1{text-align:center;color:var(--accent)}
+    .timeline{position:relative;margin:30px auto;padding-left:20px;border-left:4px solid var(--accent);max-width:800px}
+    .phase{margin-bottom:40px}
+    .phase h2{margin:0 0 10px;color:#0f3e6b;border-bottom:2px solid var(--accent);padding-bottom:5px}
+    .event{position:relative;margin:20px 0}
+    .event::before{content:"";position:absolute;left:-14px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+    details{border:1px solid var(--accent);border-radius:4px;background:#fff;margin-bottom:10px}
+    summary{cursor:pointer;padding:10px;font-weight:bold;color:var(--accent);list-style:none;position:relative}
+    summary::marker,summary::-webkit-details-marker{display:none}
+    summary::after{content:"▼";position:absolute;right:15px;transition:transform .2s}
+    details[open]>summary::after{transform:rotate(180deg)}
+    .content{padding:10px 15px;line-height:1.5}
+    .refs{margin-top:10px;font-style:italic;color:#555}
+    @media(max-width:600px){.timeline{padding-left:10px}.event::before{left:-10px}}
+  </style>
 </head>
 <body>
-<h1>Early Ministry of Jesus – Interactive Timeline</h1>
-
-<div class="timeline">
-
-  <!-- ========= Pre-Galilee ========= -->
-  <div class="phase">
-    <h2>Pre-Galilee (Baptism ➜ Arrival back in Galilee)</h2>
-
-    <div class="event">
-      <details class="section">
-        <summary>1&nbsp;&nbsp;Jesus’ Baptism</summary>
-          <details class="verse" data-ref="Matthew 3:13-17"><summary>Matthew&nbsp;3 : 13–17</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Mark 1:9-11"><summary>Mark&nbsp;1 : 9–11</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 3:21-22"><summary>Luke&nbsp;3 : 21–22</summary><div class="scripture"></div></details>
-      </details>
+  <h1>Walking with Jesus — Interactive Timeline</h1>
+  <div class="timeline">
+    <!-- Pre-Ministry Launch -->
+    <div class="phase">
+      <h2>🗺️ Pre-Ministry Launch</h2>
+      <div class="event">
+        <details>
+          <summary>1️⃣ At the Jordan — Baptized by John</summary>
+          <div class="content">
+            The journey begins at the Jordan River. Jesus comes from Galilee to John the Baptist. As He steps into the water, John baptizes Him — and heaven opens. The Holy Spirit descends, and the Father’s voice declares, “This is My beloved Son.”
+            <div class="refs">Matthew 3:13–17 | Mark 1:9–11 | Luke 3:21–22 | John 1:29–34</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>2️⃣ Into the Wilderness — Tempted but Victorious</summary>
+          <div class="content">
+            Immediately, Jesus is led by the Spirit into the wilderness. For forty days, He fasts. Satan tempts Him with power, provision, and pride — but Jesus overcomes every test.
+            <div class="refs">Matthew 4:1–11 | Mark 1:12–13 | Luke 4:1–13</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>3️⃣ Along the Jordan — First Encounters with Followers</summary>
+          <div class="content">
+            Jesus returns and walks along the Jordan. John the Baptist sees Him again and cries out, “Behold, the Lamb of God!” Hearing this, Andrew and John begin to follow Him. Soon Peter, Philip, and Nathanael join. These are first steps — friendships forming, hearts stirring — not yet a formal call.
+            <div class="refs">John 1:35–51</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>4️⃣ To Cana — The Wedding Miracle</summary>
+          <div class="content">
+            Leaving the Jordan, Jesus travels with His new followers to Cana in Galilee. At a wedding feast, when the wine runs out, His mother turns to Him. Jesus turns water into wine — His first public miracle. It’s a quiet sign… but His disciples believe.
+            <div class="refs">John 2:1–12</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>5️⃣ To Jerusalem — The First Passover and Cleansing the Temple</summary>
+          <div class="content">
+            From the wedding, Jesus heads south to Jerusalem for the Passover festival. Entering the temple courts, He finds merchants and money changers. Jesus makes a whip of cords and drives them out — declaring, “My Father’s house shall be a house of prayer.” His authority stirs both wonder and opposition.
+            <div class="refs">John 2:13–25</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>6️⃣ By Night in Jerusalem — The Conversation with Nicodemus</summary>
+          <div class="content">
+            As the crowds marvel, a Pharisee named Nicodemus comes to Jesus secretly at night. Jesus speaks to him of new birth — of being born again by water and Spirit. The seeds of the Gospel are planted, even among religious leaders.
+            <div class="refs">John 3:1–21</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>7️⃣ In the Judean Countryside — Baptizing and Growing Ministry</summary>
+          <div class="content">
+            After Passover, Jesus leaves the city but stays nearby in the Judean countryside. He and His disciples baptize new followers, while John the Baptist continues his ministry nearby. John boldly declares, “He must increase, but I must decrease.”
+            <div class="refs">John 3:22–36</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>8️⃣ On the Road to Galilee — Through Samaria’s Heart</summary>
+          <div class="content">
+            As Jesus gains more followers, the Pharisees take notice. Jesus leaves Judea, traveling north toward Galilee — but He takes an unexpected route through Samaria. At Jacob’s well, He meets a Samaritan woman. Their conversation turns her heart, and soon, many Samaritans believe in Him.
+            <div class="refs">John 4:1–42</div>
+          </div>
+        </details>
+      </div>
     </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>2&nbsp;&nbsp;Temptation in the Wilderness</summary>
-          <details class="verse" data-ref="Matthew 4:1-11"><summary>Matthew&nbsp;4 : 1–11</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Mark 1:12-13"><summary>Mark&nbsp;1 : 12–13</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 4:1-13"><summary>Luke&nbsp;4 : 1–13</summary><div class="scripture"></div></details>
-      </details>
+    <!-- Galilean Ministry -->
+    <div class="phase">
+      <h2>🌊 Galilean Ministry</h2>
+      <div class="event">
+        <details>
+          <summary>9️⃣ Back in Galilee — Healing the Official’s Son</summary>
+          <div class="content">
+            Arriving in Galilee, Jesus returns to Cana, where He had turned water into wine. A royal official comes begging Him to heal his dying son in Capernaum. Jesus speaks a word — and the boy is healed from miles away. Faith begins to grow in Galilee.
+            <div class="refs">John 4:46–54</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>🔟 Preaching in Galilean Synagogues — Rejection in Nazareth</summary>
+          <div class="content">
+            Jesus teaches in synagogues across Galilee, gaining attention everywhere He goes. But when He stands up in His hometown Nazareth, declaring Himself the fulfillment of Isaiah’s prophecy, they reject Him — even try to kill Him. He leaves Nazareth and makes Capernaum His base.
+            <div class="refs">Luke 4:14–30</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>11️⃣ Calling Disciples by the Sea of Galilee — The Miraculous Catch</summary>
+          <div class="content">
+            Walking beside the Sea of Galilee, Jesus sees Peter, Andrew, James, and John fishing. He calls them to leave everything behind — this time, it’s not just following, it’s full surrender. A miraculous catch of fish confirms His call.
+            <div class="refs">Matthew 4:18–22 | Mark 1:16–20 | Luke 5:1–11</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>12️⃣ Teaching and Healing in Capernaum — Power and Authority Revealed</summary>
+          <div class="content">
+            In Capernaum, Jesus teaches in the synagogue with undeniable authority. There, He casts out an unclean spirit from a man — shocking the crowd. Word spreads fast.
+            <div class="refs">Mark 1:21–28 | Luke 4:31–37</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>13️⃣ Healing Peter’s Mother-in-Law — Healing the Crowds</summary>
+          <div class="content">
+            Jesus leaves the synagogue and enters Peter’s house, where Peter’s mother-in-law is sick with a fever. He heals her. That evening, the whole town gathers, and Jesus heals the sick and casts out many demons.
+            <div class="refs">Mark 1:29–34 | Luke 4:38–41 | Matthew 8:14–17</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>14️⃣ Preaching Tour Across Galilee — Teaching and Casting Out Demons</summary>
+          <div class="content">
+            Early the next morning, Jesus leaves to pray alone. His disciples find Him, and He tells them, “Let us go… that I may preach there also.” He travels throughout Galilee, preaching, healing, and casting out demons.
+            <div class="refs">Mark 1:35–39 | Luke 4:42–44 | Matthew 4:23–25</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>15️⃣ Healing a Man with Leprosy — A Touch that Changes Everything</summary>
+          <div class="content">
+            A man with leprosy comes begging for healing. Jesus touches him — something no rabbi would dare do — and the man is healed. The news spreads so fast that Jesus often has to stay in secluded places.
+            <div class="refs">Mark 1:40–45 | Luke 5:12–16 | Matthew 8:1–4</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>16️⃣ Healing the Paralyzed Man — Forgiveness and Authority Revealed</summary>
+          <div class="content">
+            Back in Capernaum, a crowded house makes it impossible to get in. Four friends lower a paralyzed man through the roof. Jesus forgives his sins — stunning the religious leaders — and then heals him completely.
+            <div class="refs">Mark 2:1–12 | Luke 5:17–26 | Matthew 9:1–8</div>
+          </div>
+        </details>
+      </div>
+      <div class="event">
+        <details>
+          <summary>17️⃣ Calling Matthew (Levi) — Friend of Sinners</summary>
+          <div class="content">
+            Walking by, Jesus sees Matthew (Levi), a tax collector. “Follow Me,” He says. Matthew leaves everything. That night, Jesus eats with tax collectors and sinners — shocking the Pharisees.
+            <div class="refs">Mark 2:13–17 | Luke 5:27–32 | Matthew 9:9–13</div>
+          </div>
+        </details>
+      </div>
     </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>3&nbsp;&nbsp;First Disciples &amp; Early Ministry</summary>
-          <details class="verse" data-ref="John 1:29-34"><summary>John&nbsp;1 : 29–34</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="John 1:35-51"><summary>John&nbsp;1 : 35–51</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="John 2:1-12"><summary>John&nbsp;2 : 1–12</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="John 2:13-25"><summary>John&nbsp;2 : 13–25</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="John 3:1-21"><summary>John&nbsp;3 : 1–21</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="John 3:22-36"><summary>John&nbsp;3 : 22–36</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>4&nbsp;&nbsp;Journey Through Samaria</summary>
-          <details class="verse" data-ref="John 4:1-42"><summary>John&nbsp;4 : 1–42</summary><div class="scripture"></div></details>
-      </details>
+    <!-- Leaving Galilee -->
+    <div class="phase">
+      <h2>🚶‍♂️ Leaving Galilee — First Jerusalem Journey</h2>
+      <div class="event">
+        <details>
+          <summary>18️⃣ Leaving Galilee — Heading to Jerusalem for a Feast</summary>
+          <div class="content">
+            After this first powerful season in Galilee, Jesus travels to Jerusalem for a feast (likely Passover). This marks His first recorded departure from His Galilean ministry.
+            <div class="refs">John 5:1</div>
+          </div>
+        </details>
+      </div>
     </div>
   </div>
-
-  <!-- ========= Galilee Launch ========= -->
-  <div class="phase">
-    <h2>Galilee Ministry Launch</h2>
-
-    <div class="event">
-      <details class="section">
-        <summary>5&nbsp;&nbsp;Return to Galilee &amp; Early Ministry</summary>
-          <details class="verse" data-ref="John 4:43-54"><summary>John&nbsp;4 : 43–54</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 4:14-30"><summary>Luke&nbsp;4 : 14–30</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Matthew 4:12-17"><summary>Matthew&nbsp;4 : 12–17</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Mark 1:14-15"><summary>Mark&nbsp;1 : 14–15</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>6&nbsp;&nbsp;Calling of the First Disciples</summary>
-          <details class="verse" data-ref="Matthew 4:18-22"><summary>Matthew&nbsp;4 : 18–22</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Mark 1:16-20"><summary>Mark&nbsp;1 : 16–20</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 5:1-11"><summary>Luke&nbsp;5 : 1–11</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>7&nbsp;&nbsp;Teaching &amp; Healing in Capernaum</summary>
-          <details class="verse" data-ref="Mark 1:21-28"><summary>Mark&nbsp;1 : 21–28</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 4:31-37"><summary>Luke&nbsp;4 : 31–37</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>8&nbsp;&nbsp;Healing Peter’s Mother-in-Law &amp; Others</summary>
-          <details class="verse" data-ref="Mark 1:29-34"><summary>Mark&nbsp;1 : 29–34</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 4:38-41"><summary>Luke&nbsp;4 : 38–41</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Matthew 8:14-17"><summary>Matthew&nbsp;8 : 14–17</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>9&nbsp;&nbsp;Preaching Tour through Galilee</summary>
-          <details class="verse" data-ref="Mark 1:35-39"><summary>Mark&nbsp;1 : 35–39</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 4:42-44"><summary>Luke&nbsp;4 : 42–44</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Matthew 4:23-25"><summary>Matthew&nbsp;4 : 23–25</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>10&nbsp;&nbsp;Cleansing a Man with Leprosy</summary>
-          <details class="verse" data-ref="Mark 1:40-45"><summary>Mark&nbsp;1 : 40–45</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 5:12-16"><summary>Luke&nbsp;5 : 12–16</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Matthew 8:1-4"><summary>Matthew&nbsp;8 : 1–4</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>11&nbsp;&nbsp;Healing a Paralyzed Man</summary>
-          <details class="verse" data-ref="Mark 2:1-12"><summary>Mark&nbsp;2 : 1–12</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 5:17-26"><summary>Luke&nbsp;5 : 17–26</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Matthew 9:1-8"><summary>Matthew&nbsp;9 : 1–8</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-
-    <div class="event">
-      <details class="section">
-        <summary>12&nbsp;&nbsp;Calling of Matthew (Levi)</summary>
-          <details class="verse" data-ref="Mark 2:13-17"><summary>Mark&nbsp;2 : 13–17</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Luke 5:27-32"><summary>Luke&nbsp;5 : 27–32</summary><div class="scripture"></div></details>
-          <details class="verse" data-ref="Matthew 9:9-13"><summary>Matthew&nbsp;9 : 9–13</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-  </div>
-
-  <!-- ========= Leaving Galilee ========= -->
-  <div class="phase">
-    <h2>Leaving Galilee (First Jerusalem Trip)</h2>
-
-    <div class="event">
-      <details class="section">
-        <summary>13&nbsp;&nbsp;Jesus Leaves Galilee</summary>
-          <details class="verse" data-ref="John 5:1"><summary>John&nbsp;5 : 1</summary><div class="scripture"></div></details>
-      </details>
-    </div>
-  </div>
-
-</div>
-
-<script>
-document.querySelectorAll('details.verse').forEach(box=>{
-  const out=box.querySelector('.scripture');
-  const ref=box.dataset.ref;
-  box.addEventListener('toggle',async()=>{
-    if(box.open && !out.textContent.trim()){
-      out.innerHTML='<span class="loading">Loading…</span>';
-      try{
-        const r=await fetch('https://bible-api.com/'+encodeURIComponent(ref)+'?translation=web');
-        const d=await r.json();
-        out.innerHTML='<strong>'+d.reference+'</strong><br>'+d.text.replace(/\n/g,'<br>');
-      }catch(e){out.textContent='Sorry – couldn’t load.';}
-    }
-  });
-});
-</script>
 </body>
 </html>
